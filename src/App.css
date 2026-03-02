@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --navy: #050d1f;
+  --navy-mid: #0b1a35;
+  --navy-light: #112347;
+  --pink: #e91e8c;
+  --pink-light: #ff5cb8;
+  --pink-glow: rgba(233, 30, 140, 0.25);
+  --white: #ffffff;
+  --white-soft: rgba(255, 255, 255, 0.85);
+  --white-dim: rgba(255, 255, 255, 0.55);
+  --white-ghost: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--navy);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--white) 0%, var(--pink-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Pink accent */
+.text-pink {
+  color: var(--pink-light);
+}
+
+/* Background mesh */
+.bg-mesh {
+  background-color: var(--navy);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(233, 30, 140, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 80%, rgba(11, 26, 53, 0.8) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 60% 20%, rgba(17, 35, 71, 0.6) 0%, transparent 50%);
+}
+
+/* Section padding */
+section {
+  padding: 80px 0;
+}
+
+/* Pink button */
+.btn-pink {
+  background: linear-gradient(135deg, var(--pink), var(--pink-light));
+  border: none;
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 24px var(--pink-glow);
+}
+
+.btn-pink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 40px rgba(233, 30, 140, 0.5);
+  color: #fff;
+}
+
+/* Outline button */
+.btn-outline-glass {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--white-soft);
+  font-family: 'Syne', sans-serif;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-glass:hover {
+  background: var(--glass-bg);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--pink); border-radius: 3px; }
