@@ -3,9 +3,9 @@ import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 
 const contactDetails = [
-  { icon: <Mail size={20} />, label: 'Email Us', value: 'hello@godlwayo.com' },
-  { icon: <Phone size={20} />, label: 'Call Us', value: '+27 00 000 0000' },
-  { icon: <MapPin size={20} />, label: 'Location', value: 'South Africa' },
+  { icon: <Mail size={20} />, label: 'Email Us', value: 'superior-software.online' },
+  { icon: <Phone size={20} />, label: 'Call Us', value: '+263788738609' },
+  { icon: <MapPin size={20} />, label: 'Location', value: 'Harare ,Zimbabwe' },
 ];
 
 const ContactSection = () => {
