@@ -45,7 +45,7 @@ const NavigationBar = () => {
           >
             <Zap size={18} color="#fff" />
           </div>
-          <span className="gradient-text">Godlwayo</span>
+          <span className="gradient-text">Superior</span>
           <span style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 400 }}>Software</span>
         </Navbar.Brand>
 
