@@ -18,7 +18,7 @@ const socials = [
   {
     icon: <MessageCircle size={18} />,
     label: 'WhatsApp',
-    href: 'https://wa.me/27000000000',
+    href: 'https://wa.me/263788738609',
     color: '#25d366',
   },
 ];
@@ -168,7 +168,7 @@ const FooterSection = () => {
             <div style={{ display: 'flex', gap: 8 }}>
               <input
                 type="email"
-                placeholder="your@email.com"
+                placeholder="admin@superior-software.online"
                 style={{
                   flex: 1,
                   background: 'rgba(255,255,255,0.05)',
@@ -211,7 +211,7 @@ const FooterSection = () => {
           gap: 12,
         }}>
           <p style={{ margin: 0, color: 'rgba(255,255,255,0.3)', fontSize: '0.82rem' }}>
-            © {new Date().getFullYear()} Godlwayo Software. All rights reserved.
+            © {new Date().getFullYear()} Superior Software. All rights reserved.
           </p>
           <p style={{ margin: 0, color: 'rgba(255,255,255,0.3)', fontSize: '0.82rem' }}>
             Crafted with ♥ for growing businesses
